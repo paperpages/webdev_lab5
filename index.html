@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WebDev Lab 5</title>
+</head>
+<body>
+  <h1>Volunteer Form</h1>
+  <form>
+    <fieldset>
+      <legend>My Info</legend>
+      <label>first name:<input type="text" name="first_name_field"></label>
+      <label>last name:<input type="text" name="last_name_field"></label>
+      <label>phone:<input type="text" name="phone_field"></label>
+      <label>email:<input type="text" name="email_field"></label>
+      <label>Gender:<select name="gender_field">
+        <option value="m">Male</option>
+        <option value="f">Female</option>
+      </select></label>
+      <label>Age:<select name="age_field">
+        <option value="u">under 18</option>
+        <option value="o">over 18</option>
+      </select></label>
+    </fieldset>
+    <fieldset>
+      <legend>My Availability</legend>
+      <label><h2>Days Available:</h2><select name="available_field[]">
+        <option value="sun">Sunday</option>
+        <option value="mon">Monday</option>
+        <option value="tue">Tuesday</option>
+        <option value="wed">Wednesday</option>
+        <option value="thu">Thursday</option>
+        <option value="fri">Friday</option>
+        <option value="sat">Saturday</option>
+      </select></label>
+      <label><h2>Comments</h2><textarea name="comments_field" cols="30" rows="30"></textarea></label>
+      <input type="hidden" name="hidden_field" value="Paige">
+    </fieldset>
+    <input type="submit" value="Submit Query">
+  </form>
+</body>
+</html>
